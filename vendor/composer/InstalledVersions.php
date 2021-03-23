@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '109a3cf7dc98272878f7297ee2f80be53901802f',
+    'reference' => '983be448eaf129a2683121f5d3e6617d4b64e3f6',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -584,7 +584,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '109a3cf7dc98272878f7297ee2f80be53901802f',
+      'reference' => '983be448eaf129a2683121f5d3e6617d4b64e3f6',
     ),
     'laravel/sail' => 
     array (
@@ -869,12 +869,12 @@ private static $installed = array (
     ),
     'phpunit/phpunit' => 
     array (
-      'pretty_version' => '9.5.3',
-      'version' => '9.5.3.0',
+      'pretty_version' => '9.5.4',
+      'version' => '9.5.4.0',
       'aliases' => 
       array (
       ),
-      'reference' => '27241ac75fc37ecf862b6e002bf713b6566cbe41',
+      'reference' => 'c73c6737305e779771147af66c96ca6a7ed8a741',
     ),
     'pragmarx/google2fa' => 
     array (
