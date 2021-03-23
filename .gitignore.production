@@ -3,7 +3,9 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=phpstorm,laravel,vue,phpunit
 
 ### Production Exclude ###
+docker-compose.yml
 docker/
+node-modules/
 tests/
 tools/
 vendor/doctrine/
@@ -21,7 +23,6 @@ vendor/squizlabs/
 
 ### Docker ###
 docker-compose.override.yml
-
 
 ### Laravel ###
 node_modules/

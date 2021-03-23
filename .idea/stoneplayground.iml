@@ -10,17 +10,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="@types/chromedriver" level="application" />
-    <orderEntry type="library" name="@types/color" level="application" />
-    <orderEntry type="library" name="@types/core-js" level="application" />
-    <orderEntry type="library" name="@types/data-api-client" level="application" />
-    <orderEntry type="library" name="@types/dependency-tree" level="application" />
-    <orderEntry type="library" name="@types/fullcalendar__vue" level="application" />
-    <orderEntry type="library" name="@types/gapi.youtube" level="application" />
-    <orderEntry type="library" name="@types/playmusic" level="application" />
-    <orderEntry type="library" name="@types/youtube" level="application" />
-    <orderEntry type="library" name="@types/youtube-dl" level="application" />
-    <orderEntry type="library" name="@types/youtube-player" level="application" />
-    <orderEntry type="library" name="@types/tailwindcss" level="application" />
   </component>
 </module>

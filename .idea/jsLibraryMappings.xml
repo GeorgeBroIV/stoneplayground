@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{@types/chromedriver, @types/color, @types/core-js, @types/data-api-client, @types/dependency-tree, @types/fullcalendar__vue, @types/gapi.youtube, @types/playmusic, @types/tailwindcss, @types/youtube, @types/youtube-dl, @types/youtube-player}" />
     <excludedPredefinedLibrary name="stoneplayground/node_modules" />
   </component>
 </project>

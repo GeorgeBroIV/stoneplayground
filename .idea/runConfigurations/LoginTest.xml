@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="LoginTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+    <CommandLine workingDirectory="$PROJECT_DIR$/tests">
+      <PhpTestInterpreterSettings>
+        <option name="interpreterName" value="Local PHP" />
+      </PhpTestInterpreterSettings>
+    </CommandLine>
+    <TestRunner class="Tests\Browser\LoginTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Browser/LoginTest.php" scope="Class" />
+    <method v="2" />
+  </configuration>
+</component>

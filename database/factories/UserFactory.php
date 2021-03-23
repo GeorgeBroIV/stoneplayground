@@ -26,11 +26,11 @@ class UserFactory extends Factory
     {
         return [
             'firstname' => $this->faker->firstName,
-	        'lastname' => $this->faker->lastName,
-	        'username' => $this->faker->userName,
+            'lastname' => $this->faker->lastName,
+            'username' => $this->faker->userName,
             'email' => $this->faker->unique()->safeEmail,
             'email_verified_at' => now(),
-	        'password' => Hash::make('Passw0rd!!'),
+            'password' => Hash::make('Passw0rd!!'),
             'remember_token' => Str::random(10),
         ];
     }
@@ -38,7 +38,7 @@ class UserFactory extends Factory
     /**
      * Indicate that the model's email address should be unverified.
      *
-     * @return \Illuminate\Database\Eloquent\Factories\Factory
+     * @return Factory
      */
     public function unverified()
     {
@@ -59,7 +59,7 @@ class UserFactory extends Factory
         return $this->has(
             Team::factory()
                 ->state(function (array $attributes, User $user) {
-                    return ['name' => $user->name.'\'s Team', 'user_id' => $user->id, 'personal_team' => true];
+                    return ['name' => $user->firstname . '\'s Team', 'user_id' => $user->id, 'personal_team' => true];
                 }),
             'ownedTeams'
         );
