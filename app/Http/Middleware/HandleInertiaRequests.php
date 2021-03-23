@@ -90,6 +90,7 @@ class HandleInertiaRequests extends Middleware
                     return [$key => $bag->messages()];
                 })->all();
             },
+            // Here we can add other data that we want shared across the entire app (similar to 'errorBags' or 'user')
         ]);
     }
 }

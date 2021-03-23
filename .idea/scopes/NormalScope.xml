@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="NormalScope" pattern="!file[stoneplayground]:storage/logs//*" />
+</component>
