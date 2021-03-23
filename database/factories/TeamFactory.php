@@ -13,7 +13,7 @@ class TeamFactory extends Factory
      *
      * @var string
      */
-    protected $model = Team::class;
+    protected string $model = Team::class;
 
     /**
      * Define the model's default state.

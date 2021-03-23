@@ -1,8 +1,8 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-    <CommandLine>
+    <CommandLine workingDirectory="$PROJECT_DIR$/tests">
       <PhpTestInterpreterSettings>
-        <option name="interpreterName" value="Laravel Sail" />
+        <option name="interpreterName" value="Docker Sail" />
       </PhpTestInterpreterSettings>
     </CommandLine>
     <TestRunner configuration_file="/var/www/html/phpunit.xml" scope="XML" />

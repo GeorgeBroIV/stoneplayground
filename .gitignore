@@ -132,7 +132,6 @@ fabric.properties
 # Reference: https://phpunit.de/
 .phpunit.cache
 .phpunit.result.cache
-phpunit.xml
 
 ### PHP_CS_Fixer ###
 .php_cs.cache
