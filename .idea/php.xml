@@ -7,6 +7,7 @@
   </component>
   <component name="PhpCodeSniffer">
     <phpcs_settings>
+      <phpcs_by_interpreter interpreter_id="f706cc56-0ff3-4aab-920f-df81be9c8d6e" beautifier_path="/var/www/html/vendor/bin/phpcbf" standards="MySource;PEAR;PSR1;PSR12;PSR2;Squiz;Zend" tool_path="/var/www/html/vendor/bin/phpcs" timeout="30000" />
       <PhpCSConfiguration beautifier_path="$PROJECT_DIR$/vendor/bin/phpcbf" standards="MySource;PEAR;PSR1;PSR12;PSR2;Squiz;Zend" tool_path="$PROJECT_DIR$/vendor/bin/phpcs" />
     </phpcs_settings>
   </component>
@@ -81,7 +82,6 @@
       <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
       <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
       <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
-      <path value="$PROJECT_DIR$/vendor/laravel/sail" />
       <path value="$PROJECT_DIR$/vendor/laravel/dusk" />
       <path value="$PROJECT_DIR$/vendor/mobiledetect/mobiledetectlib" />
       <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
@@ -140,12 +140,13 @@
       <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer" />
       <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/stoneplayground/sail" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
     <interpreters>
-      <interpreter id="d3b67e49-2c4b-497c-b1c9-ea0b59443973" name="Docker" home="docker://DATA" debugger_id="php.debugger.XDebug" debugger_extension="xdebug.so">
-        <remote_data INTERPRETER_PATH="/usr/bin/php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_IMAGE_NAME="sail-8.0/app:latest" DOCKER_REMOTE_PROJECT_PATH="/opt/project" />
+      <interpreter id="a146f4df-1f56-4927-80c2-bea415ee1918" name="Docker" home="docker://DATA" debugger_id="php.debugger.XDebug" debugger_extension="xdebug.so">
+        <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_IMAGE_NAME="sail-8.0/app:latest" DOCKER_REMOTE_PROJECT_PATH="/opt/project" />
       </interpreter>
     </interpreters>
   </component>
@@ -230,6 +231,16 @@
       </interpreter>
     </phpInfoCache>
   </component>
+  <component name="PhpProjectServersManager">
+    <servers>
+      <server host="0.0.0.0" id="ef462ec2-0403-43b9-8323-8db6ceb59889" name="Docker" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/var/www/html" />
+        </path_mappings>
+      </server>
+      <server host="http://stoneplayground.local" id="94648221-c2d0-4f05-a3c1-c8f32e82c4b9" name="Local" />
+    </servers>
+  </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />
   <component name="PhpRuntimeConfiguration">
     <extensions>
@@ -242,9 +253,11 @@
       <extension name="amqp" enabled="false" />
       <extension name="apache" enabled="false" />
       <extension name="apcu" enabled="false" />
+      <extension name="bz2" enabled="false" />
       <extension name="cassandra" enabled="false" />
       <extension name="couchbase" enabled="false" />
       <extension name="cubrid" enabled="false" />
+      <extension name="dba" enabled="false" />
       <extension name="decimal" enabled="false" />
       <extension name="dio" enabled="false" />
       <extension name="enchant" enabled="false" />
@@ -254,13 +267,12 @@
       <extension name="geoip" enabled="false" />
       <extension name="geos" enabled="false" />
       <extension name="gmagick" enabled="false" />
+      <extension name="gmp" enabled="false" />
       <extension name="gnupg" enabled="false" />
       <extension name="grpc" enabled="false" />
       <extension name="http" enabled="false" />
       <extension name="ibm_db2" enabled="false" />
-      <extension name="igbinary" enabled="false" />
       <extension name="imagick" enabled="false" />
-      <extension name="imap" enabled="false" />
       <extension name="inotify" enabled="false" />
       <extension name="interbase" enabled="false" />
       <extension name="judy" enabled="false" />
@@ -269,12 +281,12 @@
       <extension name="mailparse" enabled="false" />
       <extension name="mcrypt" enabled="false" />
       <extension name="memcache" enabled="false" />
-      <extension name="memcached" enabled="false" />
       <extension name="ming" enabled="false" />
       <extension name="mongo" enabled="false" />
       <extension name="mongodb" enabled="false" />
       <extension name="mosquitto-php" enabled="false" />
       <extension name="mqseries" enabled="false" />
+      <extension name="msgpack" enabled="true" />
       <extension name="mssql" enabled="false" />
       <extension name="mysql" enabled="false" />
       <extension name="mysql_xdevapi" enabled="false" />
@@ -282,13 +294,14 @@
       <extension name="newrelic" enabled="false" />
       <extension name="oauth" enabled="false" />
       <extension name="oci8" enabled="false" />
+      <extension name="odbc" enabled="false" />
       <extension name="pdflib" enabled="false" />
       <extension name="pdo_ibm" enabled="false" />
+      <extension name="pspell" enabled="false" />
       <extension name="pthreads" enabled="false" />
       <extension name="radius" enabled="false" />
       <extension name="rar" enabled="false" />
       <extension name="recode" enabled="false" />
-      <extension name="redis" enabled="false" />
       <extension name="rrd" enabled="false" />
       <extension name="snmp" enabled="false" />
       <extension name="sqlsrv" enabled="false" />
@@ -296,6 +309,7 @@
       <extension name="suhosin" enabled="false" />
       <extension name="svn" enabled="false" />
       <extension name="sybase" enabled="false" />
+      <extension name="tidy" enabled="false" />
       <extension name="v8js" enabled="false" />
       <extension name="wddx" enabled="false" />
       <extension name="win32service" enabled="false" />
@@ -315,6 +329,7 @@
   </component>
   <component name="PhpUnit">
     <phpunit_settings>
+      <phpunit_by_interpreter interpreter_id="a146f4df-1f56-4927-80c2-bea415ee1918" configuration_file_path="/var/www/html/phpunit.xml" custom_loader_path="/var/www/html/vendor/autoload.php" phpunit_phar_path="/var/www/html/tools/phpunit-9.5.phar" use_configuration_file="true" />
       <PhpUnitSettings load_method="PHPUNIT_PHAR" configuration_file_path="$PROJECT_DIR$/phpunit.xml" custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" phpunit_phar_path="$PROJECT_DIR$/tools/phpunit-9.5.phar" use_configuration_file="true" />
     </phpunit_settings>
   </component>

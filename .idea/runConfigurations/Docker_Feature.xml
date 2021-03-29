@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Docker-Feature" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" singleton="false">
+    <CommandLine workingDirectory="$PROJECT_DIR$/tests">
+      <PhpTestInterpreterSettings>
+        <option name="interpreterName" value="Docker" />
+      </PhpTestInterpreterSettings>
+      <envs>
+        <env name="-dxdebug.mode" value="develop" />
+      </envs>
+    </CommandLine>
+    <TestRunner configuration_file="/var/www/html/phpunit.xml" scope="XML" />
+    <method v="2" />
+  </configuration>
+</component>

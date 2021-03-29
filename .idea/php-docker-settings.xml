@@ -3,6 +3,21 @@
   <component name="PhpDockerContainerSettings">
     <list>
       <map>
+        <entry key="50b71cf7-804d-4ade-9515-b916dc0011b1">
+          <value>
+            <DockerContainerSettings>
+              <option name="version" value="1" />
+              <option name="volumeBindings">
+                <list>
+                  <DockerVolumeBindingImpl>
+                    <option name="containerPath" value="/opt/project" />
+                    <option name="hostPath" value="$PROJECT_DIR$" />
+                  </DockerVolumeBindingImpl>
+                </list>
+              </option>
+            </DockerContainerSettings>
+          </value>
+        </entry>
         <entry key="64d80471-0a1a-4a2c-aca2-1f1fb329d99a">
           <value>
             <DockerContainerSettings>
@@ -21,11 +36,12 @@
         <entry key="a146f4df-1f56-4927-80c2-bea415ee1918">
           <value>
             <DockerContainerSettings>
+              <option name="runCliOptions" value="" />
               <option name="version" value="1" />
               <option name="volumeBindings">
                 <list>
                   <DockerVolumeBindingImpl>
-                    <option name="containerPath" value="/opt/project" />
+                    <option name="containerPath" value="/var/www/html" />
                     <option name="hostPath" value="$PROJECT_DIR$" />
                   </DockerVolumeBindingImpl>
                 </list>
@@ -58,7 +74,7 @@
                 <list>
                   <DockerVolumeBindingImpl>
                     <option name="containerPath" value="/var/www/html" />
-                    <option name="hostPath" value="/var/www/html" />
+                    <option name="hostPath" value="$PROJECT_DIR$" />
                   </DockerVolumeBindingImpl>
                 </list>
               </option>
